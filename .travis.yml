@@ -1,5 +1,10 @@
 sudo: required
 
+
+language: generic
+
+
+
 deploy:
   provider: elasticbeanstalk
   app: 'weather-app'
