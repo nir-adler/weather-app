@@ -1,0 +1,13 @@
+
+
+deploy:
+  provider: elasticbeanstalk
+  app: 'weather-app'
+  region: 'eu-west-1'
+  env: 'Weatherapp-env'
+  bucket_name: 'elasticbeanstalk-eu-west-1-745665539209'
+  bucket_path:  'weather-app'
+  on:
+    branch: master
+  access_key_id: '$ACCESS_KEY_ID'
+  secret_access_key: '$SECRET_ACCESS_KEY'

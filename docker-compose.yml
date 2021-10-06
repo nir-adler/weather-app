@@ -1,0 +1,15 @@
+version: '3'
+
+
+services:
+  node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:3000
+    environment:
+      - MAPBOX_TOKEN=pk.eyJ1IjoiZG9nbGl5IiwiYSI6ImNrcjF2d3ZiNjFyMmcydHBsbzdpcGdtMHAifQ.6wMgJOBmieFWZ-InTNwzXg
+      - WEATHERAPI_TOKEN=c7dea350358f745d2cd805aa521688e8
+
+    
